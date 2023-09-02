@@ -1,0 +1,10 @@
+API_PREFIX = "/api"
+
+VERSION = "0.0.1"
+DEBUG = False
+
+PROJECT_NAME= "BANTU FORMS API"
+HASURA_JWT_SECRET= ''
+
+HASURA_URL = "http://127.0.0.1:8080/v1/graphql"
+HASURA_HEADERS = {"X-Hasura-Admin-Secret": "vd7uHW1M"}

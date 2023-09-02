@@ -1,0 +1,40 @@
+<nz-layout>
+  
+  <!--Page menu header-->
+    <nz-header>
+      <nz-page-header [nzGhost]="false">
+        <nz-page-header-title>
+          <a class="text center text-3xl">
+           Live QnA Session
+          </a>
+        </nz-page-header-title>
+        <nz-page-header-extra>
+          <nz-space>
+              <div class="alain-default__nav-item d-flex align-items-center px-sm">
+                  <nz-avatar nzSize="small" nzIcon="user" class="mr-sm"></nz-avatar>
+                   James (host)
+                </div>
+                <button class="ml-3" nz-button  nzType="primary" nzDanger>Close session</button>
+          </nz-space>
+        </nz-page-header-extra>
+      </nz-page-header>
+    </nz-header>
+
+    <!--Page header ends -->
+
+    <nz-content class="outer-content">
+      <nz-layout class="inner-layout">
+
+        <!--- Side menu-->
+        <nz-sider nzWidth="300px" nzTheme="light">
+        <div class="p-2 ml-3 mr-4">
+          <src-participants-view></src-participants-view>
+        </div>
+        </nz-sider>
+        <!--Side menu ends-->
+        <!-- Main content here-->
+        <nz-content class="inner-content"><src-questions-view></src-questions-view></nz-content>
+      </nz-layout>
+      <nz-footer>Kudakwashe Chris Chipangura ©2023</nz-footer>
+    </nz-content>
+  </nz-layout>

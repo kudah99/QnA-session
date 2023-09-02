@@ -1,0 +1,58 @@
+[
+    {
+      "id": 1,
+      "first_name": "Kudakwashe",
+      "last_name": "",
+      "email": "example@domain.com",
+      "role": "session guest",
+      "avatar": "assets/images/20230712_125732.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Tendai",
+      "last_name": "",
+      "email": "example@domain.com",
+      "role": "session guest",
+      "avatar": null
+    },
+    {
+      "id": 3,
+      "first_name": "Faith",
+      "last_name": "",
+      "email": "example@domain.com",
+      "role": "session guest",
+      "avatar": null
+    },
+    {
+      "id": 4,
+      "first_name": "Panashe",
+      "last_name": "",
+      "email": "example@domain.com",
+      "role": "session guest",
+      "avatar": null
+    },
+    {
+        "id": 5,
+        "first_name": "Serena",
+        "last_name": "",
+        "email": "example@domain.com",
+        "role": "session guest",
+        "avatar": null
+    },
+    {
+        "id": 6,
+        "first_name": "John",
+        "last_name": "",
+        "email": "example@domain.com",
+        "role": "session guest",
+        "avatar": null
+      },
+      {
+        "id": 7,
+        "first_name": "Tony",
+        "last_name": "",
+        "email": "example@domain.com",
+        "role": "session guest",
+        "avatar": null
+      }
+  ]

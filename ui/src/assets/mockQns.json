@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "title": "Can you use python to create mobile games?",
+        "user_id": 2,
+        "timeago": "4 mins ago"
+    },
+    {
+        "id":2,
+        "title": "Why is object oriented programming important?",
+        "user_id": 7,
+        "timeago": "5 mins ago"
+    },
+    {
+        "id":3,
+        "title": "Can i use a custom word instead of tarditional self in python classes?",
+        "user_id": 1,
+        "timeago": "8 mins ago"
+    },
+    {
+        "id":4,
+        "title": "Can i write python code without a working computer?",
+        "user_id": 4,
+        "timeago": "10 mins ago"
+    },
+    {
+        "id":5,
+        "title": "How do you create custom exeption handlers in python?",
+        "user_id": 5,
+        "timeago": "4 mins ago"
+    }
+]
