@@ -1,0 +1,68 @@
+<nz-page-header class="site-page-header">
+  <!--title-->
+  <nz-page-header-title>Introduction to python coarse</nz-page-header-title>
+
+  <!--subtitle-->
+  <nz-page-header-subtitle>with free code camp</nz-page-header-subtitle>
+
+  <!--tags-->
+  <nz-page-header-tags>
+    <nz-tag [nzColor]="'green'"
+      ><span nz-icon nzType="signal-fill"></span>
+      <span>live question and answer session</span></nz-tag
+    >
+  </nz-page-header-tags>
+  <!--content-->
+  <nz-page-header-content>
+    <div class="p-4">
+      <nz-list nzGrid>
+        <div nz-row [nzGutter]="16">
+          <div nz-col [nzSpan]="6" *ngFor="let item of questions$ | async">
+            <nz-list-item>
+              <nz-badge nzDot [nzOffset]="[-10, 10]" nzSize="default">
+              <a
+                nz-tooltip
+                [nzTooltipTitle]="titleTemplate"
+                [nzTooltipTitleContext]="{ $implicit: 'Icon' }"
+              >
+                <ng-template #titleTemplate>
+                  <div class="p-4" style="background-color: var(--ant-primary-color); color: #fff">
+                    <span class="pb-2 text-center font-bold"
+                      >Question from {{ getUserName(item.user_id) }}</span
+                    ><br />
+                    <hr />
+                    <span> {{ item.title }}</span
+                    ><br /><br />
+                    <button nz-button nzType="outline">Mark as Answered</button>
+                  </div>
+                </ng-template>
+                <nz-card nzHoverable>
+                  <nz-card-meta
+                    [nzTitle]="getUserName(item.user_id)"
+                    [nzDescription]="item.timeago"
+                    [nzAvatar]="avatarTemplate"
+                  ></nz-card-meta>
+                </nz-card>
+              </a>
+            </nz-badge>
+              <ng-template #avatarTemplate>
+                <nz-avatar
+                *ngIf="!hasAvatar(item.user_id)"
+                  [nzShape]="'circle'"
+                  [nzSize]="'large'"
+                  [nzIcon]="'user'"
+                ></nz-avatar>
+                <nz-avatar
+                *ngIf="hasAvatar(item.user_id)"
+                  [nzShape]="'circle'"
+                  [nzSize]="'large'"
+                  nzSrc="assets/images/20230712_125732.jpg"
+                ></nz-avatar>
+              </ng-template>
+            </nz-list-item>
+          </div>
+        </div>
+      </nz-list>
+    </div>
+  </nz-page-header-content>
+</nz-page-header>
