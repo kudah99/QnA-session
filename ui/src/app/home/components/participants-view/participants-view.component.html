@@ -1,7 +1,7 @@
 <h3 [ngStyle]="{ margin: '16px 0' }">Session Participants</h3>
 <nz-list nzSize="small">
   <nz-list-header>
-    <button nz-button nzType="dashed">
+    <button nz-button nzType="dashed" (click)="copyLink()">
       copy session invitation link
       <span nz-icon nzType="link"></span></button
   ></nz-list-header>
