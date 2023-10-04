@@ -5,7 +5,7 @@
 <h2 align="center">
   </br>Live QnA Session
 </h2>
-This a dashboard tutors to spefically designed to answer live questions. The aim of this
+This a dashboard  spefically designed to answer live questions. The aim of this
 dashboard is to provide separate interface that helps that helps tutors address questions more efficiently.
 The dashboard offers a clearer and more structured format for displaying questions.
 <p align="center">
